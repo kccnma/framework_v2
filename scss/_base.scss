@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* CSS Document */
+
+// Compass
+//@import "compass";
+
+// Mixins 
+@import "../../../sass/mixins/mixins-master"; 
+
+// Modules
+@import "../../../sass/modules/all"; 
+
+// Base Font
+$base-font-family: "Crimson", Georgia, Times, "Times New Roman", serif;
+$base-font-size: 100%;
+$base-font-weight: normal;
+
+$heading-primary: "Aleo-bold", "MuseoSlab500", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+$heading-primary-light: "Aleo-light", "MuseoSlab300", "Rockwell", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+$heading-secondary: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+$heading-tertiary: 'PacificoRegular', 'OpenSansLight', Helvetica, Arial, sans-serif;
+
+$allcaps-font: "montserratbold", "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$condensed-font: "BebasNeue", "montserratbold", "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$color-main: $color-grey70;
+$color-darker: $color-grey80;
+$color-lighter: $color-grey60;
+
+$color-headings: $color-darker; 
+//$color-links: #20648d;
+$color-links: #23689a;
+$color-linkslight: #88bad8;
+$color-linksdark: #0c4e7f;
+//$color-accent: $color-grey75; 
+$color-accent: #993333;
+$base-font-color: $color-main;
+$base-line-height: 1.5;
+
+$base-background: $color-white;
+
+$base-unit-em: 2.5em;
+$base-unit-percent: 3%;
+$base-unit-px: 25px;
+$base-unit-px-sm: 15px;
+
+// Rainbow Colors
+$color-darkblue: #1b3564;
+$color-blue: #336699;
+$color-lightblue: #0099cc;
+$color-tealgreen: #006D5B;
+$color-green: #669933;
+$color-yellow: #bcb83d;
+$color-orange: #d3682b;
+$color-red: #d33a2b;
+$color-maroon: #993333;
+$color-purple: #8753a1;
+

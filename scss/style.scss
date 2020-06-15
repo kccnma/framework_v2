@@ -1,0 +1,1794 @@
+/* BASE (Initital Setup) 
+=====================================
+	#BASE (variables)
+===================================== */
+// Base Modules and Variables
+@import "base";
+
+/* PARTIALS
+=====================================
+    #RESET
+	#HTML5
+	#CLEARFIX
+	#TYPOGRAPHY 
+===================================== */
+
+// Partials - Global
+@import "../../../sass/partials/reset";
+@import "../../../sass/partials/html5";
+@import "../../../sass/partials/clearfix";
+@import "../../../sass/partials/typography";
+@import "../../../sass/partials/media";
+@import "../../../sass/partials/buttons";
+
+// Partials - Design
+
+// Partials - UI
+
+// Partials - Layout
+@import "../../../sass/partials/layout/grid-custom-percentage";
+
+/* FRAMEWORK SPECIFIC (Default CSS for The Framework) 
+=====================================
+	#FRAMEWORK GENERAL STYLING & OVERRIDES
+	#FRAMEWORK TYPOGRAPHY
+	#FRAMEWORK LAYOUT/GRID
+	#FRAMEWORK SECTIONS
+	#FRAMEWORK COLORS
+	#FRAMEWORK MEDIA QUERIES
+	#FRAMEWORK @FONT-FACE 
+===================================== */
+
+/* #FRAMEWORK GENERAL STYLING & OVERRIDES
+===================================== */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: $base-background;
+  //background: url(../images/baseline-12.gif);
+}
+
+strong {
+  font-family: "Crimson-bold", Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+  font-style: normal;
+  color: $color-darker;
+}
+
+em {
+  color: $color-darker;
+  font-family: "Crimson-italic", Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+blockquote {
+  color: $color-darker;
+}
+
+blockquote h6 {
+  color: $color-darker;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.caption {
+  font-family: $heading-secondary;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  color: $color-lighter;
+  margin-bottom: 2em;
+}
+
+/* #FRAMEWORK ICONS (Fontello)
+===================================== */
+ul.icons + ul.icons {
+  margin: 0;
+}
+
+ul.icons li {
+  margin: 0;
+  position: relative;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+  }
+}
+
+ul.icons.large-icons li {
+  margin: 0 0 1em 0;
+  padding-top: 0.8em;
+}
+
+ul.icons.large-icons i {
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ul.icons.large-icons li {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: $color-lighter;
+    margin: 0;
+    padding-left: 3.5em;
+  }
+  i + h1 {
+    margin: -0.25em 0 0 0;
+  }
+  i + h2 {
+    margin: -0.2em 0 0 0;
+  }
+  i + h3,
+  i + h4,
+  i + h5 {
+    margin: 0;
+  }
+  i + h6,
+  i + p {
+    margin: 0.2em 0 0 0;
+  }
+}
+
+ul.listcols li {
+  width: 50%;
+  float: left;
+  clear: none;
+}
+
+/* #FRAMEWORK LAYOUT/GRID
+===================================== */
+
+.grid .column {
+  background: #ccc;
+}
+
+.grid p {
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
+}
+
+/* #FRAMEWORK SPECIFIC TYPOGRAPHY
+===================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-primary;
+  font-weight: normal;
+  font-style: normal;
+  color: $color-headings;
+}
+
+.light {
+  font-family: $heading-primary-light;
+}
+
+.credit {
+  font-family: $heading-primary-light;
+  color: $color-darker;
+  font-weight: normal;
+  font-style: normal;
+
+  span {
+    font-family: $heading-primary;
+    color: $color-lighter;
+  }
+}
+
+h1.centered,
+h1.centered,
+h1.centered,
+h1.centered,
+h1.centered,
+h1.centered {
+  text-align: center;
+}
+
+.textcentered {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+p + p,
+blockquote + p {
+  //text-indent: 1em;
+  //margin-top: -1em;
+}
+
+.byline + p {
+  text-indent: 0;
+  margin-top: 0;
+}
+
+.byline {
+  font-family: $heading-secondary;
+  font-weight: normal;
+  font-style: normal;
+  color: $color-lighter;
+}
+
+h1 + .byline,
+h2 + .byline,
+h3 + .byline,
+h4 + .byline,
+h5 + .byline,
+h6 + .byline {
+  margin-top: 0;
+}
+
+.subhead {
+  margin-top: 0.5em;
+}
+
+.jumbo {
+  font-size: 1.25em;
+  margin-top: 1.5em;
+}
+
+.Crimson {
+  font-family: "Crimson";
+}
+.Georgia {
+  font-family: Georgia;
+}
+.Museo300 {
+  font-family: "Museo300";
+}
+.MuseoSlab500 {
+  font-family: "MuseoSlab500";
+}
+.OpenSansLight {
+  font-family: "OpenSansLight";
+}
+.nevis {
+  font-family: "nevis";
+}
+.montserratbold {
+  font-family: "montserratbold";
+}
+.BebasNeue {
+  font-family: "BebasNeue";
+}
+.HoneyScriptLight {
+  font-family: "HoneyScriptLight";
+}
+.OpenSansRegular {
+  font-family: "OpenSansRegular";
+}
+.Aleo-bold {
+  font-family: "Aleo-bold";
+}
+.Aleo-light {
+  font-family: "Aleo-light";
+}
+
+button,
+a.button {
+  font-family: $heading-secondary;
+}
+
+/* #FRAMEWORK SECTIONS
+===================================== */
+header:before {
+  border-bottom: 0.5em solid #000;
+  display: block;
+  content: "";
+}
+
+header {
+  //border-top: .5em solid #000;
+  background: $color-grey10;
+  border-bottom: 1px solid $color-grey20;
+}
+
+header .logo {
+  float: left;
+}
+
+header .logo h1 {
+  font-size: 1em;
+  font-family: $allcaps-font;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0.2em 0;
+  padding-top: 1em;
+}
+
+header .logo h1 a {
+  color: $color-grey60;
+}
+
+header .logo h1 a span {
+  color: $color-grey80;
+}
+
+header .logo h1 a:hover,
+header .logo h1 a:hover span {
+  color: $color-grey90;
+}
+
+header .logo .tagline {
+  text-indent: -9000px;
+  height: 0;
+  line-height: 0;
+}
+
+footer {
+  border-top: 1px solid $color-grey20;
+  border-bottom: 0.5em solid #000;
+  background: $color-grey10;
+}
+
+/* FRAMEWORK NAVIGATION */
+
+#mainnav {
+  font-size: 0.7em;
+  font-family: $allcaps-font;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  float: right;
+}
+
+#mainnav #menu {
+  display: none;
+  padding: 1.2em 1.5em 0.8em 1.5em;
+  cursor: pointer;
+}
+
+#mainnav ul {
+  margin: 0;
+  text-align: right;
+}
+
+#mainnav ul li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  clear: none;
+}
+
+#mainnav ul li a {
+  display: block;
+  float: left;
+  color: $color-grey50;
+  padding: 1.2em 1em;
+  border-top: 0.75em solid $color-grey10;
+}
+
+#mainnav ul li.selected a,
+#mainnav ul li.selected a:hover {
+  border-top: 0.75em solid #000;
+  color: $color-grey80;
+}
+
+#mainnav ul li a:hover {
+  border-top: 0.75em solid $color-grey30;
+  color: $color-grey70;
+}
+
+#submenu {
+  font-family: $allcaps-font;
+  font-size: 0.8em;
+  color: $color-grey50;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: none;
+  padding: 1em 1.5em;
+  cursor: pointer;
+}
+
+#subnav ul {
+  font-size: 0.8em;
+  margin: 0;
+  text-align: right;
+  border-bottom: 1px solid $color-grey20;
+}
+
+#subnav ul li {
+  display: inline-block;
+  clear: none;
+  margin: 1.5em 0;
+  border-left: 1px solid $color-grey15;
+  padding: 0 1% 0 2%;
+  width: 47%;
+  float: left;
+}
+
+#subnav ul li:first-child {
+  border-left: none;
+}
+
+#subnav ul li a {
+  display: block;
+  font-family: $heading-primary;
+  color: $color-grey30;
+  padding: 0.25em 0.25em;
+  text-align: center;
+  border-bottom: 0.5em solid $color-white;
+}
+
+#subnav ul li a:hover span {
+  color: $color-grey70;
+}
+
+#subnav ul li a:hover {
+  border-bottom: 0.5em solid $color-grey10;
+  color: $color-grey70;
+}
+
+#subnav ul li a span {
+  font-family: $allcaps-font;
+  font-size: 0.85em;
+  color: $color-grey50;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  clear: both;
+}
+
+#subnav ul li.selected a span,
+#subnav ul li.selected a:hover span {
+  color: $color-grey80;
+}
+
+#subnav ul li.selected a,
+#subnav ul li.selected a:hover {
+  color: $color-grey80;
+  border-bottom: 0.5em solid $color-grey20;
+}
+
+#subnav ul.speaking li {
+  font-size: 0.7em;
+}
+
+#subnav ul.speaking li a {
+  padding: 1.25em 1em;
+}
+
+#subnav ul.speaking li a,
+#subnav ul.speaking li a:hover {
+  border-bottom-width: 0.75em;
+}
+
+#subnav ul.speaking li a span {
+  font-size: 1.25em;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid $color-grey50;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 0.5em;
+  margin-right: 0.2em;
+}
+
+.arrow.up {
+  border-bottom: 5px solid $color-grey50;
+  border-top: none;
+  margin-bottom: 2px;
+}
+
+/* FRAMEWORK BILLBOARDS */
+
+.billboard {
+  padding: 2% 0;
+}
+
+.billboard.dark {
+  background-color: $color-grey60;
+  border-top: 1px solid $color-grey80;
+  border-bottom: 1px solid $color-grey80;
+}
+
+.billboard.light {
+  background-color: $color-grey20;
+  border-top: 1px solid $color-grey20;
+  border-bottom: 1px solid $color-grey20;
+}
+
+.billboard.superlight {
+  background-color: $color-grey10;
+  border-top: 1px solid $color-grey10;
+  border-bottom: 1px solid $color-grey10;
+}
+
+.billboard.dark.accented {
+  background-color: $color-darker;
+}
+
+.billboard.dark.accented .runninghead,
+.billboard.dark.accented p:first-of-type:first-letter {
+  background-color: $color-white;
+  color: $color-darker;
+}
+
+.billboard .runninghead {
+  display: inline-block;
+  background-color: $color-darker;
+  margin-top: 2em;
+  padding: 1em;
+  font-family: $allcaps-font;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.billboard h1 {
+  font-size: 4.5em;
+  line-height: 1em;
+  margin-top: 0.35em;
+  margin-bottom: 0.25em;
+}
+
+.billboard h2 {
+  font-family: $heading-secondary;
+  font-weight: normal;
+  font-style: normal;
+  color: $color-lighter;
+  margin-top: 0.25em;
+  line-height: 1.3em;
+}
+
+.billboard p:first-of-type {
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.billboard p:first-of-type:first-letter {
+  font-family: Georgia, serif;
+  font-variant: normal;
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 2.9em;
+  line-height: 0.8em;
+  margin: 0.05em 0.25em 0 0;
+  text-transform: uppercase;
+  padding: 0.25em;
+  background: $color-darker;
+}
+
+.billboard p:first-of-type:first-line {
+  //font-size:1em;
+  //font-variant:small-caps;
+}
+
+.billboard p + p {
+  text-indent: 0;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  margin-top: 1em;
+}
+
+.billboard.article p:first-of-type:first-letter {
+  font-variant: normal;
+  color: $color-main;
+  display: inline;
+  float: none;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+  text-transform: none;
+  padding: 0;
+  background: none;
+}
+
+/* FRAMEWORK SPREADS */
+
+.spread {
+  background: $color-grey5;
+  padding: 2% 0;
+  margin: 0;
+}
+.spread .container .paper {
+  background: $color-white;
+}
+
+.spread .container .row {
+  margin: 0;
+}
+
+.spread .billboard {
+  padding: 0;
+}
+
+.spread .page {
+  padding: 0 5%;
+  overflow: hidden;
+}
+
+.spread .spreadimg {
+  display: block;
+}
+
+/* #FRAMEWORK ARTICLES */
+
+article p:first-of-type:first-letter {
+  font-family: Georgia, serif;
+  font-variant: normal;
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 2.9em;
+  line-height: 0.8em;
+  margin: 0.11em 0.14em 0 0;
+  text-transform: uppercase;
+  padding: 0.25em;
+  background: $color-darker;
+}
+
+article .article-body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+article .spread:first-child {
+  padding: 2% 0 0 0;
+}
+
+article .spread {
+  padding: 0;
+}
+
+article .spread .article-body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+article .spread.cont-page {
+  padding: 0;
+}
+
+article .spread.cont-page p:first-of-type:first-letter {
+  font-size: 1em;
+  background: none;
+  color: $color-main;
+  display: inline;
+  float: none;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+}
+
+/* #FRAMEWORK GENERIC SECTIONS */
+
+.sectionhead {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 3em auto;
+}
+
+.sectionhead h2 {
+  font-family: $allcaps-font;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  margin: 3em 0 0 0;
+}
+
+.sectionhead h2:after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: 0.5em auto;
+  border-bottom: 0.3em solid $color-grey20;
+}
+
+/* #FRAMEWORK COLORED SECTIONS */
+
+.colored {
+  background: $color-grey10;
+  padding: 2em 0 4em 0;
+}
+
+.colored:nth-child(odd) {
+  background: $color-grey5;
+}
+
+.colored:last-of-type {
+  background: $color-white;
+}
+
+/* #FRAMEWORK COMPONENTS 
+===================================== */
+
+.box {
+  padding: 0 25%;
+  width: 50%;
+}
+
+.box .filled,
+.box .outlined {
+  display: block;
+  padding: 50%;
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+.box .filled {
+  background: $color-darker;
+  color: #fff;
+}
+
+.box .outlined {
+  border: 3px solid $color-darker;
+  color: $color-darker;
+}
+
+.box a.filled {
+  background: $color-links;
+}
+
+.box a.filled:hover {
+  background: $color-linksdark;
+}
+
+.box .filled .equal,
+.box .outlined .equal {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  margin: -10% 0 0 -10%;
+  height: 80%;
+  width: 80%;
+}
+
+.box .filled .equal .vertbox,
+.box .outlined .equal .vertbox {
+  display: table;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+
+.box .filled .equal .vertbox span,
+.box .outlined .equal .vertbox span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box .circled {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.box .rounded {
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
+}
+
+.box h1,
+.box h2,
+.box h3,
+.box h4,
+.box h5,
+.box h6 {
+  font-family: $condensed-font;
+  text-transform: uppercase;
+  font-size: 1.35em;
+  line-height: 1em;
+  margin: 0;
+  color: $color-darker;
+}
+
+.box .filled h1,
+.box .filled h2,
+.box .filled h3,
+.box .filled h4,
+.box .filled h5,
+.box .filled h6 {
+  color: #fff;
+}
+
+.box i,
+.box .number {
+  font-family: $allcaps-font;
+  font-size: 2em;
+}
+
+.box .number.bignumber {
+  font-size: 4em;
+}
+
+.box.big {
+  padding: 0 10%;
+  width: 80%;
+}
+
+.box.big .filled,
+.box.big .outlined {
+  padding: 50%;
+}
+
+.box.small {
+  i {
+    font-size: 1.5em;
+  }
+}
+
+.box + h1,
+.box + h2,
+.box + h3,
+.box + h4,
+.box + h5,
+.box + h6 {
+  margin-top: 0.5em;
+}
+
+/* #FRAMEWORK COLORS
+================================================== */
+
+.dark {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  .credit span {
+    color: #fff;
+  }
+
+  a {
+    color: $color-linkslight;
+  }
+
+  button,
+  a.button {
+    color: #000;
+  }
+
+  button:hover,
+  a.button:hover {
+    color: #fff;
+  }
+
+  .box .filled h3,
+  .box a.filled h3 {
+    color: $color-main;
+  }
+
+  .box .filled,
+  .box a.filled {
+    background-color: $color-white;
+    color: $color-main;
+  }
+
+  .box a.filled:hover {
+    background-color: $color-linkslight;
+  }
+}
+
+/* #FRAMEWORK COLOR OVERRIDES */
+
+.accented {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-accent;
+  }
+  .box .outlined {
+    border-color: $color-accent;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-accent;
+  }
+  #mainnav ul li.selected a,
+  #mainnav ul li.selected a:hover {
+    border-color: $color-accent;
+  }
+}
+
+.blue {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-blue;
+  }
+  .box .outlined {
+    border-color: $color-blue;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-blue;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-blue;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-blue;
+  }
+}
+
+.darkblue {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-darkblue;
+  }
+  .box .outlined {
+    border-color: $color-darkblue;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-darkblue;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-darkblue;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-darkblue;
+  }
+}
+
+.lightblue {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-lightblue;
+  }
+  .box .outlined {
+    border-color: $color-lightblue;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-lightblue;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-lightblue;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-lightblue;
+  }
+}
+
+.tealgreen {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-tealgreen;
+  }
+  .box .outlined {
+    border-color: $color-tealgreen;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-tealgreen;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-tealgreen;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-tealgreen;
+  }
+}
+
+.green {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-green;
+  }
+  .box .outlined {
+    border-color: $color-green;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-green;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-green;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-green;
+  }
+}
+
+.yellow {
+  blockquote,
+  blockquote h6,
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-yellow;
+  }
+  .box .outlined {
+    border-color: $color-yellow;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-yellow;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-yellow;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-yellow;
+  }
+}
+
+.orange {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-orange;
+  }
+  .box .outlined {
+    border-color: $color-orange;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-orange;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-orange;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-orange;
+  }
+}
+
+.red {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-red;
+  }
+  .box .outlined {
+    border-color: $color-red;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-red;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-red;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-red;
+  }
+}
+
+.maroon {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-maroon;
+  }
+  .box .outlined {
+    border-color: $color-maroon;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-maroon;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-maroon;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-maroon;
+  }
+}
+
+.purple {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-purple;
+  }
+  .box .outlined {
+    border-color: $color-purple;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-purple;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-purple;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-purple;
+  }
+}
+
+.white {
+  .box .outlined,
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6,
+  .billboard.dark.accented .runninghead,
+  .billboard.dark.accented p:first-of-type:first-letter {
+    color: $color-white;
+  }
+  .box .outlined {
+    border-color: $color-white;
+  }
+  .box .filled,
+  .box a.filled,
+  .billboard.dark.accented,
+  .billboard .runninghead,
+  .billboard p:first-of-type:first-letter {
+    background-color: $color-white;
+  }
+  #mainnav.accented ul li.selected a,
+  #mainnav.accented ul li.selected a:hover {
+    border-color: $color-white;
+  }
+  #subnav.accented ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border-color: $color-white;
+  }
+}
+
+.accented,
+.darkblue,
+.blue,
+.lightblue,
+.tealgreen,
+.green,
+.yellow,
+.orange,
+.red,
+.maroon,
+.purple {
+  //.box a.filled {
+  //  background: $color-links; }
+  .box .filled h3,
+  .box a.filled h3 {
+    color: #fff;
+  }
+  .box a.filled:hover {
+    background-color: $color-linksdark;
+  }
+  .billboard.article p:first-of-type:first-letter {
+    background: none;
+  }
+}
+
+#mainnav ul li.darkblue a:hover,
+#mainnav ul li.darkblue.selected a,
+#mainnav ul li.darkblue.selected a:hover {
+  border-color: $color-darkblue;
+}
+#mainnav ul li.blue a:hover,
+#mainnav ul li.blue.selected a,
+#mainnav ul li.blue.selected a:hover {
+  border-color: $color-blue;
+}
+#mainnav ul li.lightblue a:hover,
+#mainnav ul li.lightblue.selected a,
+#mainnav ul li.lightblue.selected a:hover {
+  border-color: $color-lightblue;
+}
+#mainnav ul li.tealgreen a:hover,
+#mainnav ul li.tealgreen.selected a,
+#mainnav ul li.tealgreen.selected a:hover {
+  border-color: $color-tealgreen;
+}
+
+#mainnav ul li.green a:hover,
+#mainnav ul li.green.selected a,
+#mainnav ul li.green.selected a:hover {
+  border-color: $color-green;
+}
+
+#mainnav ul li.yellow a:hover,
+#mainnav ul li.yellow.selected a,
+#mainnav ul li.yellow.selected a:hover {
+  border-color: $color-yellow;
+}
+
+#mainnav ul li.orange a:hover,
+#mainnav ul li.orange.selected a,
+#mainnav ul li.orange.selected a:hover {
+  border-color: $color-orange;
+}
+
+#mainnav ul li.red a:hover,
+#mainnav ul li.red.selected a,
+#mainnav ul li.red.selected a:hover {
+  border-color: $color-red;
+}
+
+#mainnav ul li.maroon a:hover,
+#mainnav ul li.maroon.selected a,
+#mainnav ul li.maroon.selected a:hover {
+  border-color: $color-maroon;
+}
+
+#mainnav ul li.purple a:hover,
+#mainnav ul li.purple.selected a,
+#mainnav ul li.purple.selected a:hover {
+  border-color: $color-purple;
+}
+
+#mainnav ul.rainbow li:nth-child(1).selected a,
+#mainnav ul.rainbow li:nth-child(1) a:hover,
+#subnav ul.rainbow li:nth-child(1).selected a,
+#subnav ul.rainbow li:nth-child(1) a:hover {
+  border-color: $color-darkblue;
+}
+
+#mainnav ul.rainbow li:nth-child(2).selected a,
+#mainnav ul.rainbow li:nth-child(2) a:hover,
+#subnav ul.rainbow li:nth-child(2).selected a,
+#subnav ul.rainbow li:nth-child(2) a:hover {
+  border-color: $color-blue;
+}
+
+#mainnav ul.rainbow li:nth-child(3).selected a,
+#mainnav ul.rainbow li:nth-child(3) a:hover,
+#subnav ul.rainbow li:nth-child(3).selected a,
+#subnav ul.rainbow li:nth-child(3) a:hover {
+  border-color: $color-lightblue;
+}
+
+#mainnav ul.rainbow li:nth-child(4).selected a,
+#mainnav ul.rainbow li:nth-child(4) a:hover,
+#subnav ul.rainbow li:nth-child(4).selected a,
+#subnav ul.rainbow li:nth-child(4) a:hover {
+  border-color: $color-tealgreen;
+}
+
+#mainnav ul.rainbow li:nth-child(5).selected a,
+#mainnav ul.rainbow li:nth-child(5) a:hover,
+#subnav ul.rainbow li:nth-child(5).selected a,
+#subnav ul.rainbow li:nth-child(5) a:hover {
+  border-color: $color-green;
+}
+
+#mainnav ul.rainbow li:nth-child(6).selected a,
+#mainnav ul.rainbow li:nth-child(6) a:hover,
+#subnav ul.rainbow li:nth-child(6).selected a,
+#subnav ul.rainbow li:nth-child(6) a:hover {
+  border-color: $color-yellow;
+}
+
+#mainnav ul.rainbow li:nth-child(7).selected a,
+#mainnav ul.rainbow li:nth-child(7) a:hover,
+#subnav ul.rainbow li:nth-child(7).selected a,
+#subnav ul.rainbow li:nth-child(7) a:hover {
+  border-color: $color-orange;
+}
+
+#mainnav ul.rainbow li:nth-child(8).selected a,
+#mainnav ul.rainbow li:nth-child(8) a:hover,
+#subnav ul.rainbow li:nth-child(8).selected a,
+#subnav ul.rainbow li:nth-child(8) a:hover {
+  border-color: $color-maroon;
+}
+
+#mainnav ul.rainbow li:nth-child(9).selected a,
+#mainnav ul.rainbow li:nth-child(9) a:hover,
+#subnav ul.rainbow li:nth-child(9).selected a,
+#subnav ul.rainbow li:nth-child(9) a:hover {
+  border-color: $color-purple;
+}
+
+/* #FRAMEWORK MEDIA QUERIES
+===================================== */
+
+/* Mobile-specific Overrides */
+@media (max-width: 46.9999em) {
+  body {
+    font-size: 87.5%; /* 14px */
+  }
+
+  .container {
+    width: 96%;
+    margin: 0;
+    padding: 0 2%;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    line-height: 1.25em;
+  }
+  h2 {
+    font-size: 1.4em;
+    line-height: 1.3em;
+  }
+  h3 {
+    font-size: 1.25em;
+    line-height: 1.35em;
+  }
+  h4 {
+    font-size: 1.15em;
+    line-height: 1.4em;
+  }
+  h5 {
+    font-size: 1.05em;
+    line-height: 1.45em;
+  }
+  h6 {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .nomobile {
+    display: none;
+  }
+
+  .billboard h1 {
+    font-size: 3.5em;
+  }
+  .billboard h2 {
+    font-size: 1.7em;
+  }
+
+  .jumbo {
+    font-size: 1em;
+  }
+
+  .mobilecentered {
+    text-align: center;
+  }
+
+  blockquote {
+    font-size: 1.25em;
+    padding: 1.5em 2em 1em 2em;
+  }
+  blockquote.quotes:before {
+    font-size: 2.75em;
+    left: 0.1em;
+  }
+  blockquote.quotes:after {
+    font-size: 2.75em;
+    right: 0.1em;
+    bottom: 0.8em;
+  }
+
+  .box h1,
+  .box h2,
+  .box h3,
+  .box h4,
+  .box h5,
+  .box h6 {
+    font-size: 1.25em;
+  }
+
+  #mainnav {
+    float: none;
+  }
+
+  #mainnav #menu {
+    float: right;
+    display: block;
+  }
+
+  #mainnav #menu span {
+    display: none;
+  }
+
+  #mainnav #menu i {
+    font-size: 1.75em;
+    //font-size: 2.25em;
+    //line-height: 1.25em;
+  }
+
+  #mainnav ul {
+    display: none;
+    margin: 0;
+    border-top: 1px solid $color-grey15;
+    margin-left: -2%;
+    margin-right: -2%;
+    height: auto;
+    overflow: auto;
+    background-color: $color-grey35;
+  }
+
+  #mainnav ul li {
+    display: block;
+    float: left;
+    width: 49.9%;
+    text-align: left;
+    //background-color: red;
+  }
+
+  #mainnav ul li.empty {
+    background-color: $color-grey15;
+  }
+
+  #mainnav ul li a,
+  #mainnav ul li.empty span {
+    display: block;
+    width: 92%;
+    padding: 1.5em 4% 1.25em 4%;
+    border: none;
+    border-top: 1px solid $color-grey25;
+    border-left: 1px solid $color-grey25;
+    color: $color-grey55;
+    background: $color-grey15;
+  }
+
+  #mainnav ul li:nth-child(odd) a {
+    border-left: 1px solid $color-grey25;
+  }
+
+  #subnav #submenu {
+    float: right;
+    display: block;
+  }
+
+  #subnav ul {
+    display: none;
+    text-align: right;
+    border-top: 1px solid $base-background;
+    border-left: 1px solid $base-background;
+    border-right: 1px solid $base-background;
+    padding-bottom: 1em;
+  }
+
+  #subnav ul li {
+    display: block;
+    //clear: both;
+    //text-align: right;
+    border: none;
+    margin: 0.5em 0;
+  }
+
+  #subnav ul li a {
+    text-align: right;
+  }
+
+  #subnav ul li a {
+    border: none;
+    border-right: 0.5em solid $color-grey10;
+    padding: 1.25em 1em;
+  }
+
+  #subnav ul li a:hover {
+    border: none;
+    border-right: 0.53em solid $color-grey15;
+    background: $color-grey10;
+  }
+
+  #subnav ul li.selected a,
+  #subnav ul li.selected a:hover {
+    border: none;
+    background: $color-grey20;
+    border-right: 0.53em solid $color-grey25;
+  }
+
+  #subnav ul.speaking li a {
+    //text-align: left;
+  }
+
+  #subnav ul.speaking li a span {
+    display: block;
+    float: right;
+    text-align: left;
+    margin-left: 1em;
+    margin-top: -0.13em;
+  }
+
+  #mainnav ul li a:hover,
+  #mainnav ul li.selected a,
+  #mainnav ul li.selected a:hover,
+  #mainnav ul.rainbow li:nth-child(1).selected a,
+  #mainnav ul.rainbow li:nth-child(1) a:hover,
+  #mainnav ul.rainbow li:nth-child(2) a:hover,
+  #mainnav ul.rainbow li:nth-child(3) a:hover,
+  #mainnav ul.rainbow li:nth-child(4) a:hover,
+  #mainnav ul.rainbow li:nth-child(5) a:hover,
+  #mainnav ul.rainbow li:nth-child(6) a:hover,
+  .accented #mainnav ul li a:hover,
+  .accented #mainnav ul li.selected a,
+  .accented #mainnav ul li.selected a:hover,
+  .blue #mainnav ul li a:hover,
+  .blue #mainnav ul li.selected a,
+  .blue #mainnav ul li.selected a:hover,
+  .green #mainnav ul li a:hover,
+  .green #mainnav ul li.selected a,
+  .green #mainnav ul li.selected a:hover,
+  .yellow #mainnav ul li a:hover,
+  .yellow #mainnav ul li.selected a,
+  .yellow #mainnav ul li.selected a:hover,
+  .orange #mainnav ul li a:hover,
+  .orange #mainnav ul li.selected a,
+  .orange #mainnav ul li.selected a:hover,
+  .red #mainnav ul li a:hover,
+  .red #mainnav ul li.selected a,
+  .red #mainnav ul li.selected a:hover,
+  .purple #mainnav ul li a:hover,
+  .purple #mainnav ul li.selected a,
+  .purple #mainnav ul li.selected a:hover {
+    border: none;
+    border-top: 1px solid $color-grey25;
+    border-left: 1px solid $color-grey25;
+    border-color: $color-grey25;
+    background: $color-grey20;
+  }
+
+  /* COLORED MOBILE NAV 
+    #mainnav ul.rainbow li:nth-child(1).selected a, 
+    #mainnav ul.rainbow li:nth-child(1) a:hover, 
+    #mainnav ul.rainbow li:nth-child(2) a:hover, 
+    #mainnav ul.rainbow li:nth-child(3) a:hover, 
+    #mainnav ul.rainbow li:nth-child(4) a:hover, 
+    #mainnav ul.rainbow li:nth-child(5) a:hover, 
+    #mainnav ul.rainbow li:nth-child(6) a:hover,
+    .blue #mainnav ul li a:hover, 
+    .blue #mainnav ul li.selected a, 
+    .blue #mainnav ul li.selected a:hover,
+    .green #mainnav ul li a:hover, 
+    .green #mainnav ul li.selected a, 
+    .green #mainnav ul li.selected a:hover,
+    .yellow #mainnav ul li a:hover, 
+    .yellow #mainnav ul li.selected a, 
+    .yellow #mainnav ul li.selected a:hover,
+    .orange #mainnav ul li a:hover, 
+    .orange #mainnav ul li.selected a, 
+    .orange #mainnav ul li.selected a:hover,
+    .red #mainnav ul li a:hover, 
+    .red #mainnav ul li.selected a, 
+    .red #mainnav ul li.selected a:hover,
+    .purple #mainnav ul li a:hover, 
+    .purple #mainnav ul li.selected a, 
+    .purple #mainnav ul li.selected a:hover {
+        border-left: 1px solid $color-grey25; 
+    }
+    */
+
+  .subnav ul {
+    text-align: center;
+  }
+
+  .subnav ul li {
+    border-left: none;
+  }
+
+  .sectionhead {
+    width: 90%;
+  }
+
+  .billboard p + p {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/* Medium */
+@media (min-width: 47em) {
+  .notablet {
+    display: none;
+  }
+
+  body {
+    font-size: 93.75%; /* 15px */
+  }
+
+  .container {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+  }
+
+  #subnav ul li {
+    padding: 0 1em 0 1.5em;
+    width: auto;
+    float: none;
+  }
+
+  article .article-body {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  ul.listcols li {
+    width: 33.3333%;
+  }
+
+  article .spread,
+  article .spread.cont-page {
+    padding: 2% 0;
+  }
+
+  article .spread:first-child {
+    padding: 2% 0;
+  }
+
+  .spread .page {
+    width: 40%;
+    padding: 5%;
+    float: left;
+  }
+
+  .spread .page:first-child {
+    width: 39%;
+    border-right: 1px solid $color-grey5;
+  }
+
+  .spread .container .paper {
+    //border-left: 10px solid $color-darker;
+  }
+}
+
+/* Large */
+@media (min-width: 75em) {
+  .nodesktop {
+    display: none;
+  }
+  .notablet {
+    display: inline;
+  }
+
+  body {
+    font-size: 100%; /* 16px */
+  }
+  .container {
+    width: 72em;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  .box i,
+  .box .number {
+    font-size: 3em;
+  }
+
+  ul.listcols li {
+    width: 25%;
+  }
+}
